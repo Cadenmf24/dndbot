@@ -30,8 +30,25 @@ def rollToDamage(dice, modifier):
     
     print("Rolled a " + roll + " With a " + modifier + "Resulting in a " + (roll+modifier))
     
-def main():
+def createMonsters(monsterId, type, modifier):
     
-    print("Test")
+    
+    
+    newmonster = [monsterId, type, modifier]
+    
+    print(newmonster)
+    
+    return newmonster
+
+def rollInitiative():
+    
+    initiativeRoll = np.randint(20)
+    
+    print(initiativeRoll)
+    
+    return initiativeRoll
+    
+def main():
+    print("Running")
     
 main()
